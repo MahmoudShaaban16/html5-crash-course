@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myForm">
+        <label for="qty">Qty</label>
+        <input name="qty" id="qty" type="number" value="1">
+
+        <label for="price">Price</label>
+        <input name="price" id="price" type="number">
+        <input type="number" id="total" name="total" readonly>
+        <input type="button" id="btnCalc" value="calculate total price">
+    </form>
+    <script>
+        function calculateTotal() {
+            var qty = document.getElementById("qty");
+            var price = document.getElementById("price");
+            var total = document.getElementById("total");
+            total.value = price.value * qty.value;
+            return total.value;
+
+        }
+        document.body.onload = function () {
+            alert('loading page is complete');
+        }
+        document.getElementById("btnCalc").onmouseover = calculateTotal;
+        // alternative way
+        document.getElementById("btnCalc").addEventListener("mouseover", function () {
+            alert('this is the second event listenr');
+        })
+
+    </script>
+</body>
+
+</html>

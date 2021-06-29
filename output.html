@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formOrder" name="formOrder" oninput="totalPrice.value=qty.value*price.value">
+        <div>
+            <input id="productname" name="productname" type="text">
+        </div>
+        <div><input id="qty" name="qty" type="number"></div>
+        <div>  <input id="price"  name="price" type="number"></div>
+        
+      
+Total Price:
+        <output id="totalPrice" name="totalPrice" for="qty price"></output>
+    </form>
+    <script>
+        function calculateTotal(){
+
+        }
+    </script>
+</body>
+</html>

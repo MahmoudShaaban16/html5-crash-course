@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DOM</title>
+</head>
+
+<body>
+    <a href="pages/contact.html" onclick="alert('hello')" id="a1">Go to contact</a>
+    <a href="pages/contact.html" id="a1">Go to contact 2</a>
+    <script>
+
+        // this is example of getting the element by id
+
+        var aContact = document.getElementById("a1");
+        if(aContact!=null){
+            aContact.style.fontSize = "20px";
+        }
+       
+        // below is example of getting element by tag name
+        console.log(document.anchors);
+        // this is DOM representation from the HTML <a> into object
+        var lstAnchors = document.getElementsByTagName("a");
+        console.log(lstAnchors.length);
+        if (lstAnchors.length > 0) {
+            lstAnchors[0].href = "http://google.com";
+            lstAnchors[0].style.backgroundColor = 'yellow';
+            lstAnchors[0].onclick=function(){
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

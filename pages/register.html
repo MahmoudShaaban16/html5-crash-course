@@ -1,0 +1,45 @@
+<!-- <form>
+    <label for="first">First name:</label>
+    <input type="text" name="first">
+
+    <label for="last">Last name:</label>
+    <input type="text" name="last">
+
+    <label for="password">First name:</label>
+    <input type="text" name="first">
+
+</form> -->
+
+<form role="form" method="POST" >
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="text" pattern="[a-z]*@\w*.\w*"  class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input required type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">File input</label>
+      <input type="file" disabled class="form-control-file" id="exampleInputFile">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">Birth date</label>
+        <input type="date"   max="2022-12-31" class="form-control-file" id="dtBirth">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <div class="checkbox">
+       <select>
+           <option value="1">Egypt</option>
+           <option value="2">UEA</option>
+           <option value="3">KSA</option>
+       </select>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

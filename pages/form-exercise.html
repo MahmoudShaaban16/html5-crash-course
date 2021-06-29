@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="bookingForm">
+        <div>
+            <label>Speciality</label>
+            <select name="sepciality" >
+                <option value=""></option>
+                <option>Denistry
+                </option>
+                <option>Ear and Nose
+                </option>
+                <option>Audiology
+                </option>
+                <option>Denistry
+                </option>
+            </select>
+        </div>
+        <div>
+            <label>Doctor Name(*)</label>
+            <select name="doctor" required>
+                <option>
+                    Doctor 1
+                </option>
+                <option>
+                    Doctor 2
+                </option>
+            </select>
+        </div>
+        <div>
+            <label>Booking Date(*)</label>
+            <input type="date" name="bookingDate" required>
+        </div>
+        <div>
+            <label>Booking Time(*)</label>
+            <input type="time" name="bookingTime" required>
+        </div>
+        <div>
+            <label>Payment option</label>
+            <label for="paymentOption">
+                <input type="radio" value="Cash" name="paymentOption" required>
+                Cash
+            </label>
+           
+            <label for="paymentOption">
+                <input type="radio" value="Cash" name="paymentOption" required>
+                Credit Card
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Book">
+            <input type="reset" value="Reset">
+
+        </div>
+    </form>
+</body>
+
+</html>
